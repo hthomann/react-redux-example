@@ -7,8 +7,11 @@ import * as actionTypes from '../../store/actions';
 
 class Counter extends Component {
     render() {
+        let msgToRemove;
+        if (this.props.storedResults.length > 0) {
+            msgToRemove = "Click on a stored value to remove it.";
+        }
         return (
-
             <div>
                 <CounterOutput value={this.props.ctr} />
                 <CounterControl label="Increment" clicked={this.props.onIncrementCounter} />
@@ -17,6 +20,8 @@ class Counter extends Component {
                 <CounterControl label="Subtract 15" clicked={this.props.onSubtractCounter} />
                 <hr />
                 <button onClick={() => this.props.onStoreResult(this.props.ctr)}>Store Result</button>
+                <p>{msgToRemove}</p>
+                
                 <ul>
                     {this.props.storedResults.map(strResult => (
                         <li key={strResult.id} onClick={() => this.props.onDeleteResult(strResult.id)}>{strResult.value}</li>
