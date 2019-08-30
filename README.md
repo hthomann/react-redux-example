@@ -1,6 +1,6 @@
 # react-redux-example
 
-This basis of this example was taken from this Udemy course:
+The basis of this example was taken from this Udemy course:
 
 https://www.udemy.com/react-the-complete-guide-incl-redux
 
