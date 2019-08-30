@@ -1,12 +1,12 @@
 # react-redux-example
 
-This example was taken from this Udemy course:
+This basis of this example was taken from this Udemy course:
 
 https://www.udemy.com/react-the-complete-guide-incl-redux
 
 It consist of a simple counter where the state is stored in Redux.
 
-To use it simply do a 'npm install', then an 'nmp start'.  
+To use it simply clone the code then do a 'npm install', then an 'nmp start'.  
 
 The first thing to look at is redux-basics.js.  This simply uses 
 Redux from a JS file that can be executed directly using Node.js; i.e.
